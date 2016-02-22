@@ -1,9 +1,8 @@
 import {Component} from "angular2/core";
 import {Member} from "./Member";
 import {MemberDetailsComponent} from "./member-details/member-details.component";
-import {MemberListComponent} from "./memberlist/member-list.component";
+import {MemberListComponent} from "./member-list/member-list.component";
 import {HeaderComponent} from "./header/header.component";
-
 
 @Component({
 selector: "my-app",

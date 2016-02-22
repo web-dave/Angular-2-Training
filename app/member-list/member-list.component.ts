@@ -4,8 +4,8 @@ import {MemberService} from "../member.service";
 
 @Component({
 selector: "member-list",
-  templateUrl: "app/memberlist/member-list.html",
-styleUrls: ["app/memberlist/member-list.css"],
+  templateUrl: "app/member-list/member-list.template.html",
+styleUrls: ["app/member-list/member-list.styles.css"],
 directives: [],
 providers: [MemberService],
 outputs:['onSelectMember']
