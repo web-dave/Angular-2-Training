@@ -8,7 +8,7 @@ selector: "member-list",
 styleUrls: ["app/member-list/member-list.styles.css"],
 directives: [],
 providers: [MemberService],
-outputs:['onSelectMember']
+outputs:["onSelectMember"]
 })
 export class MemberListComponent {
   public members: Member[];
