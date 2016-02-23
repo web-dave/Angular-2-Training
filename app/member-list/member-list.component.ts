@@ -3,32 +3,32 @@ import {Member} from "../Member";
 import {MemberService} from "../member.service";
 
 @Component({
-selector: "member-list",
-  templateUrl: "app/member-list/member-list.template.html",
-styleUrls: ["app/member-list/member-list.styles.css"],
-directives: [],
-providers: [MemberService],
-outputs:["onSelectMember"]
+    selector: "member-list",
+    templateUrl: "app/member-list/member-list.template.html",
+    styleUrls: ["app/member-list/member-list.styles.css"],
+    directives: [],
+    providers: [MemberService],
+    outputs: ["onSelectMember"]
 })
 export class MemberListComponent {
-  public members: Member[];
-  public selectedMember: Member;
-  public onSelectMember = new EventEmitter<Member>();
-  constructor (private _MemberService: MemberService){}
-  onSelect(member: Member) {
-    this.selectedMember = member;
-    this.onSelectMember.emit(member);
-  }
-  getMembers() {
-    this._MemberService.getMembers()
-        .subscribe(
+    public members: Member[];
+    public selectedMember: Member;
+    public onSelectMember = new EventEmitter<Member>();
+    constructor(private _MemberService: MemberService) { }
+    onSelect(member: Member) {
+        this.selectedMember = member;
+        this.onSelectMember.emit(member);
+    }
+    getMembers() {
+        this._MemberService.getMembers()
+            .subscribe(
             data => this.members = data,
             error => console.log(error),
             () => console.log("Finished")
 
-         );
-  }
-  ngOnInit() {
-    this.getMembers();
-  }
+            );
+    }
+    ngOnInit() {
+        this.getMembers();
+    }
 }

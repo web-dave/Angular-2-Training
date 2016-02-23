@@ -1,22 +1,30 @@
 import {Component} from "angular2/core";
+import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "angular2/router";
 import {Member} from "./Member";
-import {MemberDetailsComponent} from "./member-details/member-details.component";
-import {MemberListComponent} from "./member-list/member-list.component";
+import { ListenViewComponent } from "./listen-view/listen-view.component";
 import {HeaderComponent} from "./header/header.component";
 
 @Component({
 selector: "my-app",
   template: `
     <my-header></my-header>
-    <member-list (onSelectMember)="selectedMember = $event"></member-list>
-    <member-details [member]="selectedMember"></member-details>
+    <router-outlet></router-outlet>
   `,
   directives: [
-    MemberDetailsComponent,
     HeaderComponent,
-    MemberListComponent
+    ROUTER_DIRECTIVES
+  ],
+  providers: [
+      ROUTER_PROVIDERS
   ]
 })
+@RouteConfig([
+    {
+        path: "/liste",
+        name: "Liste",
+        component: ListenViewComponent
+    }
+])
 export class AppComponent {
 public members: Member[];
 public selectedMember: Member;

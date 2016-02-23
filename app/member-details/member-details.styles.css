@@ -1,0 +1,27 @@
+.member-details{
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 300px;
+}
+.member-details h2{
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em;
+    height: 2em;
+    border-radius: 4px;
+}
+.member-details div{
+    position: relative;
+    left: 0;
+    width: 100%;
+    color: #607D8B;
+    margin: .5em;
+    padding: .3em;
+    height: 2em;
+    border-radius: 4px;
+}
