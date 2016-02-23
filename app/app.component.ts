@@ -22,12 +22,13 @@ selector: "my-app",
     {
         path: "/liste",
         name: "Liste",
-        component: ListenViewComponent
+        component: ListenViewComponent,
+        useAsDefault: true
     }
 ])
 export class AppComponent {
 public members: Member[];
 public selectedMember: Member;
-constructor (){}
+constructor () {}
 onSelect(member: Member) { this.selectedMember = member; }
 }
