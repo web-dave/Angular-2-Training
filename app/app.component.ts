@@ -3,6 +3,7 @@ import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "angular2/route
 import {Member} from "./Member";
 import { ListenViewComponent } from "./listen-view/listen-view.component";
 import {HeaderComponent} from "./header/header.component";
+import {NewMemberComponent} from "./new-member/new-member.component";
 
 @Component({
 selector: "my-app",
@@ -24,7 +25,12 @@ selector: "my-app",
         name: "Liste",
         component: ListenViewComponent,
         useAsDefault: true
-    }
+    },
+    {
+        path: "/neu",
+        name: "Neu",
+        component: NewMemberComponent
+    },
 ])
 export class AppComponent {
 public members: Member[];
