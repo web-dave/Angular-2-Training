@@ -1,8 +1,8 @@
-<form [ngFormModel]="newMemberForm" (submit)="addMember($event)">
+<form [ngFormModel]="newMemberForm" >
     <select ngControl="gender" >
         <option value="Mr." selected>Mr.</option>
         <option value="Mrs.">Mrs.</option>
     </select>
     <input ngControl="name" type="name" placeholder="Name">
-    <button type="submit">Speichern</button>
+    <button (click)="addMember($event)">Speichern</button>
 </form>
