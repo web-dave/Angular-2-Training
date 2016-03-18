@@ -10,13 +10,13 @@ export function main(): void {
         ]);
 
         // allwas fail
-        it("1+1=1 should allwas fail",() => {
+        it("1+1=1 should allwas pass 1+1!=1",() => {
             let num: number = 1;
-            expect(num + num ).toBe(1);
+            expect(num + num ).not.toBe(1);
         });
         
         // allwasy done
-        it("1+1=2 should allwas done",() => {
+        it("1+1=2 should allwas pass 1+1=2",() => {
             let num: number = 1;
             expect(num + num ).toBe(2);
         });

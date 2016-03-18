@@ -3,16 +3,24 @@
   "version": "1.0.0",
   "scripts": {
     "test": "tsc && karma start",
-    "postinstall": "npm run typings install",
+    "postinstall": "npm run typings install -A",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
     "typings": "typings"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-dave/Angular-2-Training.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web-dave/Angular-2-Training/issues"
+  },
+  "homepage": "http://fasil.webdave.de",
   "license": "ISC",
   "dependencies": {
-    "angular2": "2.0.0-beta.8",
+    "angular2": "2.0.0-beta.9",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
     "reflect-metadata": "0.1.2",
@@ -21,15 +29,16 @@
     "zone.js": "^0.6.2"
   },
   "devDependencies": {
-    "traceur": "^0.0.91",
     "concurrently": "^1.0.0",
-    "karma-phantomjs2-launcher": "^0.3.2",
-    "phantomjs-html": "*",
-    "karma-chrome-launcher": "^0.2.2",
     "jasmine-core": "~2.3.4",
     "karma": "~0.13.15",
+    "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "~0.3.6",
+    "karma-jasmine-html-reporter": "^0.2.0",
+    "karma-phantomjs2-launcher": "^0.3.2",
     "lite-server": "^2.0.2",
+    "phantomjs-html": "*",
+    "traceur": "^0.0.91",
     "typescript": "^1.7.5",
     "typings": "^0.6.8"
   }

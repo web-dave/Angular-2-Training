@@ -5,3 +5,6 @@ text.txt
 .idea
 server
 .vscode
+coverage
+typings
+*.bak
