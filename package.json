@@ -2,7 +2,7 @@
   "name": "angular2-training",
   "version": "1.0.0",
   "scripts": {
-    "test": "tsc && karma start",
+    "test": "concurrent \"npm run tsc:w\" \"karma start\" ",
     "postinstall": "npm run typings install -A",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
