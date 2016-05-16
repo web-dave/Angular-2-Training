@@ -1,8 +1,7 @@
-import {Injectable} from "angular2/core";
-import {Http} from "angular2/http";
+import {Injectable} from "@angular/core";
+import {Http, Headers} from "@angular/http";
 import {Member} from "./Member";
 import "rxjs/add/operator/map";
-import {Headers} from "angular2/http";
 
 @Injectable()
 export class MemberService {

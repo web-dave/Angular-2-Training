@@ -1,4 +1,4 @@
-import {describe, expect, it, inject, beforeEachProviders} from "angular2/testing";
+import {describe, expect, it, inject, beforeEachProviders} from "@angular/core/testing";
 import {AppComponent} from "./app.component";
 
 export function main(): void {

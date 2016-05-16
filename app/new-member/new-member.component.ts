@@ -1,6 +1,6 @@
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
 import {Member} from "../Member";
-import {Validators,FormBuilder,Control,ControlGroup} from "angular2/common";
+import {Validators,FormBuilder,Control,ControlGroup} from "@angular/common";
 import {MemberService} from "../member.service";
 @Component({
     selector: "new-member",

@@ -1,4 +1,4 @@
-import {Component, OnInit, EventEmitter} from "angular2/core";
+import {Component, OnInit, EventEmitter} from "@angular/core";
 import {Member} from "../Member";
 import {MemberService} from "../member.service";
 

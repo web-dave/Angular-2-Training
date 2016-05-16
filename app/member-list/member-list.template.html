@@ -1,5 +1,5 @@
 <ul class="member">
-  <li *ngFor="#member of members"
+  <li *ngFor="let member of members"
     [class.selected]="member === selectedMember"
     (click)="onSelect(member)">
     <span class="badge">{{member.id}}</span> {{member.name}}

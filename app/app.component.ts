@@ -1,6 +1,6 @@
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
 import {Member} from "./Member";
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "angular2/router";
+import { RouteConfig,  ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "@angular/router-deprecated";
 import {ListenViewComponent} from "./listen-view/listen-view.component";
 import {NewMemberComponent} from "./new-member/new-member.component";
 

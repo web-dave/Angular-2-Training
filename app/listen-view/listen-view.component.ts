@@ -1,4 +1,4 @@
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
 import {Member} from "../Member";
 import {MemberDetailsComponent} from "../member-details/member-details.component";
 import {MemberListComponent} from "../member-list/member-list.component";
